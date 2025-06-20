@@ -18,7 +18,7 @@ const products = ref(startData.products)
 const department = ref(startData.department)
 function add_property() {
   department.value = material.value.map((profileItem) => {
-    const foundOriginalMaterial = this.material.find(
+    const foundOriginalMaterial = material.value.find(
       (mat) => mat.articul === profileItem.articul
     );
     return {
